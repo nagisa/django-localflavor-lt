@@ -79,3 +79,11 @@ class LTIDCodeField(RegexField):
             return True
         except (ValueError, KeyError):
             return False
+
+class LTPostalCodeField(RegexField):
+    default_error_messages = {
+        'invalid': _('Enter a postal code in the format XXXXX or LT-XXXXX.'),
+    }
+    def __init__(self, max_length=None, min_length=None, *args, **kwargs):
+        super(LTPostalCodeField, self).__init__(r'(?i)^(LT?(\s)?-(\s)?)?(\d{5})$',
+            max_length, min_length, *args, **kwargs)

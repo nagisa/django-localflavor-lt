@@ -17,8 +17,8 @@ What's in the Lithuania localflavor?
 * forms.LTCountySelect:  A form ``Select`` widget that uses a list of
   Lithuanian counties as choices.
 
-* forms.LTMunicipalitySelect: A form ``Select`` widget that uses a list of
-  Lithuanian municipalities as choices.
+* forms.LTPostalCodeField: A form input that validates
+  Lithuanian postal codes in the format XXXXX or LT-XXXXXX.
 
 See the source code for full details.
 
