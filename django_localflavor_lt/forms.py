@@ -1,8 +1,8 @@
 from __future__ import unicode_literals
 from datetime import date
 
-from django.contrib.localflavor.lt.lt_choices import COUNTY_CHOICES, \
-                                                     MUNICIPALITY_CHOICES
+from django_localflavor_lt.lt_choices import COUNTY_CHOICES, \
+                                             MUNICIPALITY_CHOICES
 from django.core.validators import EMPTY_VALUES
 from django.forms import ValidationError
 from django.forms.fields import Select, RegexField
