@@ -5,7 +5,7 @@ README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 
 setup(
     name = 'django-localflavor-lt',
-    version = '1.0',
+    version = '1.1',
     description = 'Country-specific Django helpers for Lithuania.',
     long_description = README,
     author = 'Simonas Kazlauskas',
