@@ -86,8 +86,8 @@ class LTPostalCodeField(RegexField):
     A form field that validates as Lithuanian postal code
 
     Lithuanian postal codes in following forms accepted:
-        * XXXXXX
-        * LT-XXXXXX
+        * XXXXX
+        * LT-XXXXX
     """
     default_error_messages = {
         'invalid': _('Enter a postal code in the format XXXXX or LT-XXXXX.'),
