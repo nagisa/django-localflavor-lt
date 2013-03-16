@@ -80,10 +80,19 @@ class LTIDCodeField(RegexField):
         except (ValueError, KeyError):
             return False
 
+
 class LTPostalCodeField(RegexField):
+    """
+    A form field that validates as Lithuanian postal code
+
+    Lithuanian postal codes in following forms accepted:
+        * XXXXXX
+        * LT-XXXXXX
+    """
     default_error_messages = {
         'invalid': _('Enter a postal code in the format XXXXX or LT-XXXXX.'),
     }
-    def __init__(self, max_length=None, min_length=None, *args, **kwargs):
-        super(LTPostalCodeField, self).__init__(r'(?i)^(LT?(\s)?-(\s)?)?(\d{5})$',
-            max_length, min_length, *args, **kwargs)
+
+    def __init__(self, *args, **kwargs):
+        super(LTPostalCodeField, self).__init__(r'(?i)^(LT\s?-\s?)?\d{5}$',
+                                                *args, **kwargs)

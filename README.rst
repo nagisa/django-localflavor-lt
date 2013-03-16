@@ -21,7 +21,7 @@ What's in the Lithuania localflavor?
   Lithuanian municipalities as choices.
 
 * forms.LTPostalCodeField: A form input that validates
-  Lithuanian postal codes in the format XXXXX or LT-XXXXXX.
+  Lithuanian postal codes in the format XXXXX or LT-XXXXX.
 
 See the source code for full details.
 
