@@ -4,6 +4,20 @@ django_localflavor_lt
 
 Country-specific Django helpers for Lithuania.
 
+
+=======
+WARNING
+=======
+
+This app has been superseded by the newly created django-localflavor_ app
+which recombines all the different country locaflavors again (after having
+been removed from Django). Development and maintenance of this app has
+stopped and is only left online as a reminder for the users of those apps.
+It will be removed after grace period of 1 Django release (~spring 2014).
+
+.. _django-localflavor: https://github.com/django/django-localflavor/
+
+
 What's in the Lithuania localflavor?
 ====================================
 
